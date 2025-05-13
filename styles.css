@@ -106,8 +106,11 @@ h2 {
 
 .container {
     max-width: 1200px;
+    color: #444;
     margin: 0 auto;
     padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
     text-align: left;
 }
 
