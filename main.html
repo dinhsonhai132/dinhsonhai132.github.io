@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercuryLang</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MercuryLang</h1>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-c.js"></script>
+
+    </header>
+
+    <h1 class="intro">Welcome to MercuryLang</h1>
+    <h1 class="description">Welcome to MercuryLang — a free and open-source lightweight interpreter written in C++, inspired by the simplicity of Python. MercuryLang is designed to offer clean, readable, and expressive syntax, making it an ideal choice for developers of all experience levels.</h1></h2>
+    <div class = "button">
+        <button class="btn">
+            <a href="https://github.com/dinhsonhai132/MercuryLang" class="btn-link">Download</a>
+        </button>
+    </div>
+    <div class="container">
+        <div class="why-mercurylang">
+            <h2>Why MercuryLang?</h2>
+            <ul>
+                <li>Python-like syntax: MercuryLang has a syntax similar to Python, making it easy to learn and use.</li></li>
+                <li>Custom data types: MercuryLang supports custom data types, allowing you to create your own data structures.</li>
+                <li>Built-in functions: MercuryLang comes with a set of built-in functions for common tasks, making it easy to get started.</li>
+                <li>Simple error handling: MercuryLang has a simple error handling mechanism, making it easy to debug your code.</li>
+                <li>Lightweight: MercuryLang is lightweight and can be easily integrated into other projects.</li>
+            </ul>
+        </div>
+
+        <div class="getting-started"> 
+            <h2>Getting started</h2>
+            <p>Before you download MercuryLang, make sure you have:</p>
+            <ul>
+                <li>A computer with a modern operating system (Windows, macOS, or Linux)</li>
+                <li>A cmake tool to build from source, version 3.12 or higher</li>
+                <li>A C++ compiler (GCC, Clang, or MSVC)</li>
+            </ul>
+            <p>Once you have these prerequisites, you can download MercuryLang from the link above. After downloading, follow the installation instructions in the README file.</p>
+        </div>
+
+        <div class="syntax">
+            <h2>Syntax</h2>
+            
+            <p>MercuryLang has a simple and easy-to-read syntax. Here are some examples:</p>
+            
+            <pre><code class="language-c">
+# Hello World program in MercuryLang
+!write("Hello, World!")
+            </code></pre>
+            <p>The code above prints "Hello, World!" to the console.</p>
+            
+            <p>This is for variable name of variable dont start with number and only support alpha or "_"</p>
+            <pre><code class="language-c">
+# Variable declaration
+LET x = 10
+LET y = 20
+            </code></pre>
+
+            <p>This is for function and function call</p>
+            <pre><code class="language-c">
+# Function declaration
+FUNC foo() DO
+    !write("Hello from foo!")
+END
+
+# Function call start with '!'
+!foo() 
+            </code></pre>
+
+            <p>This is for math operator</p>
+            <pre><code class="language-c">
+# Math operations
+LET a = 10
+LET b = 20
+
+a + b # Addition
+a - b # Subtraction
+a * b # Multiplication
+a / b # Division
+            </code></pre>
+
+            <p>Comparison operator</p>
+            <pre><code class="language-c">
+# Comparison operations
+LET a = 10
+LET b = 20
+
+a == b # Equality
+a != b # Inequality
+a &gt; b  # Greater than
+a &lt; b  # Less than
+a &gt;= b # Greater than or equal to
+a &lt;= b # Less than or equal to
+            </code></pre>
+
+            <p>This is for if statement</p>
+            <pre><code class="language-c">
+# If statement
+LET a = 10
+LET b = 20
+IF a > b THEN
+    !write("a is greater than b")
+END
+            </code></pre>
+
+            <p>Assignment expression</p>
+            <pre><code class="language-c">
+# Assignment expression
+LET a = 10
+a = a + 5
+            </code></pre>
+
+            <p>This is for while statement</p>
+            <pre><code class="language-c">
+# While loop
+LET i = 0
+WHILE i &lt; 10 DO
+    !write(i)
+    i = i + 1
+END
+            </code></pre>
+
+            <p>Example for what MercuryLang can do</p>
+            <pre><code class="language-c">
+# TODO: print the number from 1 to 100 that divisible by 2
+
+LET max = 100
+LET number = 0
+
+WHILE number &lt=; max DO
+    IF number % 2 == 0 THEN
+        PRINT number
+    END
+    number = number + 1
+END
+            </code></pre>
+        </div>
+
+        <div class="contribute">
+            <h2>Contribute</h2>
+            <p>If you want to contribute to MercuryLang, please check out our GitHub repository. We welcome contributions from anyone!</p>
+            <p>To contribute, follow these steps:</p>
+            <ol>
+                <li>Fork the repository</li>
+                <li>Create a new branch</li>
+                <li>Make your changes</li>
+                <li>Commit your changes</li>
+                <li>Push to the branch</li>
+                <li>Create a pull request</li>
+            </ol>
+    </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or feedback, please feel free to contact us at <a href="https://github.com/dinhsonhai132">My Github</a></p>
+        </div>
+</body>
+</html>
+
