@@ -55,7 +55,7 @@
             
             <pre><code class="language-c">
 # Hello World program in MercuryLang
-!write("Hello, World!")
+print("Hello, World!")
             </code></pre>
             <p>The code above prints "Hello, World!" to the console.</p>
             
@@ -70,11 +70,10 @@ LET y = 20
             <pre><code class="language-c">
 # Function declaration
 FUNC foo() DO
-    !write("Hello from foo!")
+    print("Hello from foo!")
 END
 
-# Function call start with '!'
-!foo() 
+foo() 
             </code></pre>
 
             <p>This is for math operator</p>
@@ -125,7 +124,7 @@ a = a + 5
 # While loop
 LET i = 0
 WHILE i &lt; 10 DO
-    !write(i)
+    print(i)
     i = i + 1
 END
             </code></pre>
@@ -139,7 +138,7 @@ LET number = 0
 
 WHILE number &lt= max DO
     IF number % 2 == 0 THEN
-        PRINT number
+        print(number)
     END
     number = number + 1
 END
