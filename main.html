@@ -185,16 +185,10 @@
             });
 
             if (res.ok) {
-                status.textContent = "✅ Đã gửi thành công!";
-                status.style.color = "green";
                 document.getElementById("message").value = "";
             } else {
-                status.textContent = "❌ Gửi thất bại!";
-                status.style.color = "red";
             }
         } catch (err) {
-            status.textContent = "❌ Lỗi kết nối!";
-            status.style.color = "red";
         }
     }
 </script>
