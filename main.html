@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đinh Sơn Hải - 18-year-old developer from Vietnam, founder of Solarity Labs, building programming languages and low-level systems.">
+    <meta name="keywords" content="Đinh Sơn Hải, Solarity Labs, Suny Language, MercuryLang, Programming Languages, C, Assembly, Vietnam Developer">
+    <title>Đinh Sơn Hải - Developer & Founder of Solarity Labs</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">☀️</span>
+                <span class="logo-text">Sơn Hải</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🇻🇳</span>
+                    <span>Working from Vietnam</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Đinh Sơn Hải</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    18-year-old final-year high school student passionate about <strong>low-level programming</strong>, 
+                    building <strong>programming languages from scratch</strong>, and understanding 
+                    <strong>what the computer is actually doing underneath</strong>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">3+</div>
+                        <div class="stat-label">Languages Built</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">25+</div>
+                        <div class="stat-label">GitHub Followers</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-value">Founder</div>
+                        <div class="stat-label">Solarity Labs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4V16M10 16L4 10M10 16L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Understanding computers at the deepest level
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card main-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>My Philosophy</h3>
+                    <p>
+                        I don't just want to learn how to <em>use</em> a language — 
+                        I want to understand <strong>what the computer is actually doing underneath</strong>. 
+                        This drives me to build tools and languages from scratch, studying interpreters, 
+                        virtual machines, and runtime internals.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">🔧</div>
+                        <h3>What I'm Building</h3>
+                        <ul>
+                            <li>☀️ <strong>Suny</strong> — Programming language in pure C</li>
+                            <li>🪐 <strong>MercuryLang</strong> — Advanced language runtime</li>
+                            <li>🔴 <strong>Mars</strong> — System-level experiments</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">📚</div>
+                        <h3>What I'm Learning</h3>
+                        <ul>
+                            <li>Interpreters & Virtual Machines</li>
+                            <li>AST & Bytecode Generation</li>
+                            <li>Memory Management & GC</li>
+                            <li>Runtime Internals & Optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>My Vision</h3>
+                        <p>
+                            Building <strong>Solarity Labs</strong> — an independent technology company 
+                            focused on system-level foundations, programming languages, and tools 
+                            that are technically solid and long-lasting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Building programming languages and system-level tools
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Suny Project -->
+                <div class="project-card featured">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-icon">☀️</div>
+                    <h3 class="project-title">Suny Language 1.0</h3>
+                    <p class="project-description">
+                        A lightweight interpreted programming language built from scratch in pure C. 
+                        Features dynamic typing, garbage collection, custom VM, and clean syntax 
+                        designed for learning compiler internals.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Interpreter</span>
+                        <span class="tag">VM</span>
+                        <span class="tag">Garbage Collection</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2.5L9.5 6.5L13.5 7L10.5 10L11.5 14L8 11.5L4.5 14L5.5 10L2.5 7L6.5 6.5L8 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>2 stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="lang-dot c"></span>
+                            <span>C</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/solarity-lab/Suny" target="_blank" class="project-link">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- MercuryLang Project -->
+                <div class="project-card featured">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-icon">🪐</div>
+                    <h3 class="project-title">MercuryLang 2.2.1</h3>
+                    <p class="project-description">
+                        An advanced programming language with enhanced runtime capabilities. 
+                        Built in C++, featuring improved memory management, optimized bytecode execution, 
+                        and modern language features.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Compiler</span>
+                        <span class="tag">Runtime</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2.5L9.5 6.5L13.5 7L10.5 10L11.5 14L8 11.5L4.5 14L5.5 10L2.5 7L6.5 6.5L8 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>4 stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="lang-dot cpp"></span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/solarity-lab/MercuryLang" target="_blank" class="project-link">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Mars Project -->
+                <div class="project-card">
+                    <div class="project-icon">🔴</div>
+                    <h3 class="project-title">Mars</h3>
+                    <p class="project-description">
+                        Experimental system-level programming project exploring low-level concepts, 
+                        memory management techniques, and performance optimization strategies in pure C.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Systems</span>
+                        <span class="tag">Low-level</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="stat">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2.5L9.5 6.5L13.5 7L10.5 10L11.5 14L8 11.5L4.5 14L5.5 10L2.5 7L6.5 6.5L8 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>3 stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="lang-dot c"></span>
+                            <span>C</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/solarity-lab/Mars" target="_blank" class="project-link">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Solarity Labs -->
+                <div class="project-card highlight">
+                    <div class="project-icon">🏢</div>
+                    <h3 class="project-title">Solarity Labs</h3>
+                    <p class="project-description">
+                        Independent technology company focused on building system-level foundations, 
+                        programming languages, and developer tools that don't chase trends but are 
+                        technically solid and built to last.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Organization</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                    <a href="https://github.com/solarity-lab" target="_blank" class="project-link">
+                        View Organization
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    Tools and technologies I work with
+                </p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">C</div>
+                            <div class="skill-info">
+                                <div class="skill-name">C</div>
+                                <div class="skill-level">Expert</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">C++</div>
+                            <div class="skill-info">
+                                <div class="skill-name">C++</div>
+                                <div class="skill-level">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">ASM</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Assembly</div>
+                                <div class="skill-level">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">JS</div>
+                            <div class="skill-info">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">Proficient</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🔧</span>
+                        Core Competencies
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Interpreter Development</div>
+                                <div class="skill-desc">Building custom language runtimes</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Compiler Design</div>
+                                <div class="skill-desc">Lexing, parsing, AST, bytecode</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🧩</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Virtual Machines</div>
+                                <div class="skill-desc">VM architecture & optimization</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">♻️</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Memory Management</div>
+                                <div class="skill-desc">GC algorithms & optimization</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔍</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Systems Programming</div>
+                                <div class="skill-desc">Low-level system internals</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📦</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Runtime Systems</div>
+                                <div class="skill-desc">Execution engines & optimization</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛠️</span>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">Git</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Git & GitHub</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐧</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Linux</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📝</div>
+                            <div class="skill-info">
+                                <div class="skill-name">VS Code</div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔨</div>
+                            <div class="skill-info">
+                                <div class="skill-name">Make & CMake</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">
+                    Feel free to reach out for collaborations or just a friendly hello
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect With Me</h3>
+                    <p>
+                        I'm always interested in discussing programming languages, compiler design, 
+                        low-level systems, or potential collaborations on interesting projects.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/dinhsonhai132" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61576825118209" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@SolarityLabOfficial" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div class="detail-text">
+                                <div class="detail-label">Location</div>
+                                <div class="detail-value">Vietnam 🇻🇳</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💼</div>
+                            <div class="detail-text">
+                                <div class="detail-label">Work</div>
+                                <div class="detail-value">Founder at Solarity Labs</div>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🎓</div>
+                            <div class="detail-text">
+                                <div class="detail-label">Status</div>
+                                <div class="detail-value">Final-year High School Student</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Join Solarity Labs</h3>
+                        <p>
+                            Interested in contributing to programming language development 
+                            or system-level projects? Join our organization on GitHub!
+                        </p>
+                        <a href="https://github.com/solarity-lab" target="_blank" class="btn btn-primary">
+                            <span>Visit Solarity Labs</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">☀️</span>
+                        <span class="logo-text">Đinh Sơn Hải</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Building the future of programming languages, one line of C at a time.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Projects</h4>
+                        <ul>
+                            <li><a href="https://github.com/solarity-lab/Suny" target="_blank">Suny Language</a></li>
+                            <li><a href="https://github.com/solarity-lab/MercuryLang" target="_blank">MercuryLang</a></li>
+                            <li><a href="https://github.com/solarity-lab/Mars" target="_blank">Mars</a></li>
+                            <li><a href="https://github.com/solarity-lab" target="_blank">Solarity Labs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/dinhsonhai132" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61576825118209" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@SolarityLabOfficial" target="_blank">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Đinh Sơn Hải. Built with passion for low-level programming.</p>
+                <p class="footer-tech">Made with HTML, CSS & JavaScript • Powered by Solarity Labs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 16V4M10 4L4 10M10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
